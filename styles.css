@@ -15,3 +15,20 @@ body {
   flex-direction: column;
 }
 
+@keyframes blue-color {
+  0% {
+    border-top-color: #a9a9a9;
+  }
+  
+  100% {
+    border-top-color: #0198E1;
+  }
+}
+
+.wifi__line {
+  margin: 10px;
+  border: 20px solid transparent;
+  border-top-color: #a9a9a9;
+  border-radius: 50%;
+  animation: blue-color 1s linear forwards;
+}
