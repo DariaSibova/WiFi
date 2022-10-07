@@ -32,3 +32,37 @@ body {
   border-radius: 50%;
   animation: blue-color 1s linear forwards;
 }
+
+.wifi__line.one {
+  animation: 
+    blue-color 1s linear forwards 2s, 
+    found 1s linear forwards 2s;
+}
+
+
+.wifi__line.two {
+  animation: 
+    blue-color 1s linear forwards 1s, 
+    found 1s linear forwards 1s;
+}
+
+.wifi__line.three {
+  animation: 
+    blue-color 1s linear forwards, 
+    found 1s linear forwards;
+}
+
+@keyframes found {
+  33.33% {
+    
+  transform: rotate(30deg)
+  }
+  
+  66.66% {  
+    transform: rotate(-30deg)
+  }
+  
+  100% {
+    transform: none;
+  }
+}
